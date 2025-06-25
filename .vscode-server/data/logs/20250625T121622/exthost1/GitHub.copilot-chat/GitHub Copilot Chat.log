@@ -1,0 +1,29 @@
+2025-06-25 12:16:27.964 [info] Can't use the Electron fetcher in this environment.
+2025-06-25 12:16:27.964 [info] Using the Node fetch fetcher.
+2025-06-25 12:16:27.964 [info] Initializing Git extension service.
+2025-06-25 12:16:27.964 [info] Successfully activated the vscode.git extension.
+2025-06-25 12:16:27.964 [info] Enablement state of the vscode.git extension: true.
+2025-06-25 12:16:27.964 [info] Successfully registered Git commit message provider.
+2025-06-25 12:16:28.266 [info] Logged in as n-yuka-n
+2025-06-25 12:16:29.496 [info] Got Copilot token for n-yuka-n
+2025-06-25 12:16:29.760 [info] copilot token chat_enabled: true, sku: monthly_subscriber_quota
+2025-06-25 12:16:29.760 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-06-25 12:16:29.775 [info] Registering default platform agent...
+2025-06-25 12:16:30.080 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-06-25 12:16:31.132 [info] Fetched model metadata in 1627ms a5575cb9-9576-4f5b-a022-4c307ce7bf92
+2025-06-25 12:16:31.135 [info] activationBlocker from 'languageModelAccess' took for 3080ms
+2025-06-25 12:48:48.926 [info] Logged in as n-yuka-n
+2025-06-25 12:48:50.032 [info] Got Copilot token for n-yuka-n
+2025-06-25 12:48:50.273 [info] copilot token chat_enabled: true, sku: monthly_subscriber_quota
+2025-06-25 12:48:50.371 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-06-25 12:48:50.700 [info] Fetched model metadata in 662ms 444270e8-6228-49f8-848d-6287c7767539
+2025-06-25 13:04:58.672 [info] Fetched model metadata in 740ms ad72b020-220d-4785-b772-3f6b59b3649b
+2025-06-25 13:20:52.456 [info] Logged in as n-yuka-n
+2025-06-25 13:20:53.511 [info] Got Copilot token for n-yuka-n
+2025-06-25 13:20:53.712 [info] copilot token chat_enabled: true, sku: monthly_subscriber_quota
+2025-06-25 13:20:53.817 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-06-25 13:52:58.911 [info] Logged in as n-yuka-n
+2025-06-25 13:53:00.007 [info] Got Copilot token for n-yuka-n
+2025-06-25 13:53:00.262 [info] copilot token chat_enabled: true, sku: monthly_subscriber_quota
+2025-06-25 13:53:00.391 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-06-25 13:53:00.782 [info] Fetched model metadata in 770ms 916be4bb-7c92-4416-8e19-19702f343efc

@@ -1,0 +1,34 @@
+2025-06-25 11:18:51.224 [info] Claude code extension is now active!
+2025-06-25 11:18:51.224 [info] MCP Server running on port 35944 (localhost only)
+2025-06-25 11:29:06.957 [info] Creating new Claude terminal
+2025-06-25 11:29:07.446 [info] Terminal shell integration available
+2025-06-25 11:29:33.492 [info] Claude running check result: {"claudeRunning":false,"terminalProcessTree":["6073","3843","3284","3280","3205","3204","3199","3198","2"],"runningClaudeProcesses":[],"isChildOfThisTerminal":false}
+2025-06-25 11:29:33.492 [info] Creating new Claude terminal
+2025-06-25 11:29:33.877 [info] Terminal shell integration available
+2025-06-25 11:30:49.962 [info] New WS connection from: /
+2025-06-25 11:30:49.963 [info] MCP server connected to transport
+2025-06-25 11:30:49.963 [info] [DiagnosticStreamManager] Started streaming diagnostics
+2025-06-25 11:30:49.963 [info] [DiagnosticStreamManager] Registered client client_0. Total clients: 1
+2025-06-25 11:30:49.963 [info] Registered diagnostic client: client_0
+2025-06-25 11:30:50.463 [info] Logging event: run_claude_command undefined
+2025-06-25 11:30:50.463 [info] Logging event: run_claude_command undefined
+2025-06-25 11:31:46.287 [info] Closing all diff tabs in the editor...
+2025-06-25 11:31:46.287 [info] Closed 0 diff tabs.
+2025-06-25 11:32:25.984 [info] diff from /home/yuka/strong_woman_project.py to /home/yuka/strong_woman_project.py as ✻ [Claude Code] strong_woman_project.py (ae28b0) ⧉
+2025-06-25 11:32:26.034 [info] leftTempFileProvider.createFile /home/yuka/strong_woman_project.py
+2025-06-25 11:32:26.058 [info] Closing all diff tabs in the editor...
+2025-06-25 11:32:26.058 [info] Closed 0 diff tabs.
+2025-06-25 11:32:26.250 [info] diff result undefined ✻ [Claude Code] strong_woman_project.py (ae28b0) ⧉ {"$mid":1,"path":"/home/yuka/strong_woman_project.py","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/home/yuka/strong_woman_project.py","path":"/home/yuka/strong_woman_project.py","scheme":"_claude_fs_right"} {"preview":false}
+2025-06-25 11:33:30.206 [info] tab_closed ✻ [Claude Code] strong_woman_project.py (ae28b0) ⧉
+2025-06-25 11:33:33.434 [info] diff from /home/yuka/requirements.txt to /home/yuka/requirements.txt as ✻ [Claude Code] requirements.txt (fc437a) ⧉
+2025-06-25 11:33:33.480 [info] leftTempFileProvider.createFile /home/yuka/requirements.txt
+2025-06-25 11:33:33.491 [info] Closing all diff tabs in the editor...
+2025-06-25 11:33:33.492 [info] Closed 0 diff tabs.
+2025-06-25 11:33:33.582 [info] diff result undefined ✻ [Claude Code] requirements.txt (fc437a) ⧉ {"$mid":1,"path":"/home/yuka/requirements.txt","scheme":"_claude_fs_left"} {"$mid":1,"external":"_claude_fs_right:/home/yuka/requirements.txt","path":"/home/yuka/requirements.txt","scheme":"_claude_fs_right"} {"preview":false}
+2025-06-25 11:34:00.395 [info] tab_closed ✻ [Claude Code] requirements.txt (fc437a) ⧉
+2025-06-25 11:37:41.059 [info] Closing all diff tabs in the editor...
+2025-06-25 11:37:41.059 [info] Closed 0 diff tabs.
+2025-06-25 11:41:31.926 [info] Closing all diff tabs in the editor...
+2025-06-25 11:41:31.927 [info] Closed 0 diff tabs.
+2025-06-25 11:50:00.540 [info] Closing all diff tabs in the editor...
+2025-06-25 11:50:00.540 [info] Closed 0 diff tabs.

@@ -1,0 +1,24 @@
+2025-06-25 12:16:22.793 [info] 
+
+
+
+
+2025-06-25 12:16:22.793 [info] Extension host agent started.
+2025-06-25 12:16:22.865 [info] Marked extension as removed github.copilot-chat-0.27.3
+2025-06-25 12:16:22.866 [info] Deleted marked for removal extension from disk github.copilot-chat /home/yuka/.vscode-server/extensions/github.copilot-chat-0.27.3
+2025-06-25 12:16:22.921 [info] [127.0.0.1][8184d389][ManagementConnection] New connection established.
+2025-06-25 12:16:22.985 [info] ComputeTargetPlatform: linux-x64
+2025-06-25 12:16:23.087 [info] [127.0.0.1][ee7efb78][ExtensionHostConnection] New connection established.
+2025-06-25 12:16:23.419 [info] [127.0.0.1][ee7efb78][ExtensionHostConnection] <16994> Launched Extension Host Process.
+2025-06-25 12:16:24.526 [info] ComputeTargetPlatform: linux-x64
+2025-06-25 12:16:25.726 [info] Downloaded extension to file:///home/yuka/.vscode-server/data/CachedExtensionVSIXs/266ed9f4-2738-4cf0-92e1-6c9469053a83
+2025-06-25 12:16:25.749 [info] Installing extension: github.copilot-chat {"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"}}
+2025-06-25 12:16:26.847 [info] Getting Manifest... github.copilot
+2025-06-25 12:16:27.229 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/github.copilot-chat-0.27.3: github.copilot-chat
+2025-06-25 12:16:27.237 [info] Renamed to /home/yuka/.vscode-server/extensions/github.copilot-chat-0.27.3
+2025-06-25 12:16:27.252 [info] Extension installed successfully: github.copilot-chat file:///home/yuka/.vscode-server/extensions/extensions.json
+2025-06-25 12:16:45.025 [info] Installing extension: anthropic.claude-code {"isMachineScoped":true,"installGivenVersion":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"}}
+2025-06-25 12:16:45.057 [info] Deleted existing extension from disk anthropic.claude-code /home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34
+2025-06-25 12:16:45.069 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34: anthropic.claude-code
+2025-06-25 12:16:45.073 [info] Renamed to /home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34
+2025-06-25 12:16:45.084 [info] Extension installed successfully: anthropic.claude-code file:///home/yuka/.vscode-server/extensions/extensions.json

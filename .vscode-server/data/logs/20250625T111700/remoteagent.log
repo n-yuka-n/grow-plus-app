@@ -1,0 +1,58 @@
+2025-06-25 11:17:00.703 [info] 
+
+
+
+
+2025-06-25 11:17:00.713 [info] Extension host agent started.
+2025-06-25 11:17:00.739 [info] Started initializing default profile extensions in extensions installation folder. file:///home/yuka/.vscode-server/extensions
+2025-06-25 11:17:00.758 [info] ComputeTargetPlatform: linux-x64
+2025-06-25 11:17:00.763 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/yuka/.vscode-server/extensions
+2025-06-25 11:17:00.957 [info] [127.0.0.1][ac8b819d][ManagementConnection] New connection established.
+2025-06-25 11:17:00.991 [info] Installing extensions...
+2025-06-25 11:17:01.099 [info] ComputeTargetPlatform: linux-x64
+2025-06-25 11:17:01.124 [info] [127.0.0.1][ba6bb419][ExtensionHostConnection] New connection established.
+2025-06-25 11:17:01.399 [info] [127.0.0.1][ba6bb419][ExtensionHostConnection] <3542> Launched Extension Host Process.
+2025-06-25 11:17:02.073 [info] Installing extension 'ms-ceintl.vscode-language-pack-ja'...
+2025-06-25 11:17:02.407 [info] Getting Manifest... ms-ceintl.vscode-language-pack-ja
+2025-06-25 11:17:02.421 [info] Installing extension: ms-ceintl.vscode-language-pack-ja {"isMachineScoped":true,"isBuiltin":false,"installGivenVersion":false,"isApplicationScoped":true,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"}}
+2025-06-25 11:17:03.871 [info] Extension signature verification result for ms-ceintl.vscode-language-pack-ja: Success. Internal Code: 0. Executed: true. Duration: 1105ms.
+2025-06-25 11:17:03.973 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ja-1.100.2025051409: ms-ceintl.vscode-language-pack-ja
+2025-06-25 11:17:03.981 [info] Renamed to /home/yuka/.vscode-server/extensions/ms-ceintl.vscode-language-pack-ja-1.100.2025051409
+2025-06-25 11:17:03.988 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-ja
+2025-06-25 11:17:04.006 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-ja file:///home/yuka/.vscode-server/extensions/extensions.json
+2025-06-25 11:17:04.007 [info] Extension 'ms-ceintl.vscode-language-pack-ja' v1.100.2025051409 was successfully installed.
+2025-06-25 11:17:04.876 [info] Downloaded extension to file:///home/yuka/.vscode-server/data/CachedExtensionVSIXs/44ecb2e7-bcd3-4df3-a998-2abb83689a0e
+2025-06-25 11:17:04.884 [info] Installing extension: github.copilot-chat {"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"}}
+2025-06-25 11:17:05.410 [info] Getting Manifest... github.copilot
+2025-06-25 11:17:05.470 [info] Installing extension: github.copilot {"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"},"pinned":false,"installGivenVersion":false,"context":{"dependecyOrPackExtensionInstall":true}}
+2025-06-25 11:17:05.794 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/github.copilot-chat-0.27.3: github.copilot-chat
+2025-06-25 11:17:05.805 [info] Renamed to /home/yuka/.vscode-server/extensions/github.copilot-chat-0.27.3
+2025-06-25 11:17:06.600 [info] Downloaded extension to file:///home/yuka/.vscode-server/data/CachedExtensionVSIXs/3ac4543e-2d74-476d-b87b-22c7ed287d09
+2025-06-25 11:17:06.606 [info] Installing extension: github.copilot {"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"}}
+2025-06-25 11:17:07.280 [info] Getting Manifest... github.copilot-chat
+2025-06-25 11:17:07.508 [info] Extension signature verification result for github.copilot: Success. Internal Code: 0. Executed: true. Duration: 1052ms.
+2025-06-25 11:17:07.944 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/github.copilot-1.336.0: github.copilot
+2025-06-25 11:17:07.953 [info] Renamed to /home/yuka/.vscode-server/extensions/github.copilot-1.336.0
+2025-06-25 11:17:07.965 [info] Extension installed successfully: github.copilot file:///home/yuka/.vscode-server/extensions/extensions.json
+2025-06-25 11:17:08.155 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/github.copilot-1.336.0: github.copilot
+2025-06-25 11:17:08.163 [info] Rename failed because of ENOTEMPTY: directory not empty, rename '/home/yuka/.vscode-server/extensions/.0953602f-169a-450d-97a3-4579169929d5' -> '/home/yuka/.vscode-server/extensions/github.copilot-1.336.0'. Deleted from extracted location {"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/.0953602f-169a-450d-97a3-4579169929d5","path":"/home/yuka/.vscode-server/extensions/.0953602f-169a-450d-97a3-4579169929d5","scheme":"file"}
+2025-06-25 11:17:08.169 [error] Error while installing the extension github.copilot ENOTEMPTY: directory not empty, rename '/home/yuka/.vscode-server/extensions/.0953602f-169a-450d-97a3-4579169929d5' -> '/home/yuka/.vscode-server/extensions/github.copilot-1.336.0' file:///home/yuka/.vscode-server/extensions/extensions.json
+2025-06-25 11:17:08.182 [info] Rollback: Uninstalled extension github.copilot-chat
+2025-06-25 11:17:08.197 [info] Marked extension as removed github.copilot-chat-0.27.3
+2025-06-25 11:17:09.172 [error] Error: ENOTEMPTY: directory not empty, rename '/home/yuka/.vscode-server/extensions/.0953602f-169a-450d-97a3-4579169929d5' -> '/home/yuka/.vscode-server/extensions/github.copilot-1.336.0'
+    at async Object.rename (node:internal/fs/promises:782:10)
+    at async Object.LC (file:///home/yuka/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/out/server-main.js:43:5924)
+    at async yf.G (file:///home/yuka/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/out/server-main.js:55:24768)
+    at async yf.extractUserExtension (file:///home/yuka/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/out/server-main.js:55:21846)
+    at async kl.wb (file:///home/yuka/.vscode-server/bin/19e0f9e681ecb8e5c09d8784acaa601316ca4571/out/server-main.js:55:15397)
+2025-06-25 11:18:51.028 [info] Installing extension: anthropic.claude-code {"isMachineScoped":true,"installGivenVersion":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"}}
+2025-06-25 11:18:51.061 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34: anthropic.claude-code
+2025-06-25 11:18:51.066 [info] Renamed to /home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34
+2025-06-25 11:18:51.073 [info] Extension installed successfully: anthropic.claude-code file:///home/yuka/.vscode-server/extensions/extensions.json
+2025-06-25 11:30:50.187 [info] Installing extension: anthropic.claude-code {"isMachineScoped":true,"installGivenVersion":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/yuka/.vscode-server/extensions/extensions.json","external":"file:///home/yuka/.vscode-server/extensions/extensions.json","path":"/home/yuka/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.100.0","date":"2025-05-07T12:48:53.763Z"}}
+2025-06-25 11:30:50.218 [info] Deleted existing extension from disk anthropic.claude-code /home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34
+2025-06-25 11:30:50.234 [info] Extracted extension to file:///home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34: anthropic.claude-code
+2025-06-25 11:30:50.238 [info] Renamed to /home/yuka/.vscode-server/extensions/anthropic.claude-code-1.0.34
+2025-06-25 11:30:50.245 [info] Extension installed successfully: anthropic.claude-code file:///home/yuka/.vscode-server/extensions/extensions.json
+2025-06-25 12:12:20.905 [info] [127.0.0.1][ac8b819d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-06-25 12:12:21.035 [info] [127.0.0.1][ba6bb419][ExtensionHostConnection] <3542> Extension Host Process exited with code: 0, signal: null.

@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "date": "2025-06-25",
+      "sleep_time": "23:00",
+      "wake_time": "07:00",
+      "breakfast": "食べなかった",
+      "lunch": "ハンバーグ",
+      "dinner": "すき焼き",
+      "exercise_type": "ジョギング",
+      "exercise_duration": 120,
+      "exercise_notes": "ランニングと筋トレ",
+      "mood": "🙂",
+      "daily_notes": "一日中雨だった",
+      "timestamp": "2025-06-25T11:51:57.847143"
+    },
+    {
+      "date": "2025-06-25",
+      "sleep_time": "23:00",
+      "wake_time": "07:00",
+      "breakfast": "",
+      "lunch": "",
+      "dinner": "",
+      "exercise_type": "なし",
+      "exercise_duration": 0,
+      "exercise_notes": "",
+      "mood": "🙂",
+      "daily_notes": "",
+      "timestamp": "2025-06-25T12:51:26.900177"
+    }
+  ]
+}

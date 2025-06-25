@@ -1,0 +1,48 @@
+2025-06-25 12:16:25.067 [info] [main] ログ レベル: Info
+2025-06-25 12:16:25.067 [info] [main] Git の検証が検出されました: "git"
+2025-06-25 12:16:25.067 [info] [main] "git" から Git "2.34.1" を使用しています
+2025-06-25 12:16:25.067 [info] [Model][doInitialScan] Initial repository scan started
+2025-06-25 12:16:25.067 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-06-25 12:23:44.042 [info] > git rev-parse --show-toplevel [9ms]
+2025-06-25 12:23:44.043 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 12:23:44.052 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-25 12:23:44.052 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 12:43:38.242 [info] > git rev-parse --show-toplevel [13ms]
+2025-06-25 12:43:38.243 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 12:43:38.250 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-25 12:43:38.250 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 12:53:51.861 [info] > git rev-parse --show-toplevel [3ms]
+2025-06-25 12:53:51.861 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 12:53:51.869 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-25 12:53:51.869 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 13:01:52.947 [info] > git rev-parse --show-toplevel [3ms]
+2025-06-25 13:01:52.947 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 13:01:52.956 [info] > git rev-parse --show-toplevel [2ms]
+2025-06-25 13:01:52.956 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 13:02:11.016 [info] > git rev-parse --show-toplevel [2ms]
+2025-06-25 13:02:11.016 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 13:02:11.024 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-25 13:02:11.024 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-06-25 13:56:32.351 [info] > git rev-parse --show-toplevel [5ms]
+2025-06-25 13:56:32.369 [info] > git rev-parse --show-toplevel [2ms]
+2025-06-25 13:56:37.681 [info] > git rev-parse --show-toplevel [2ms]
+2025-06-25 13:56:37.689 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-06-25 13:56:37.707 [info] [Model][openRepository] Opened repository (path): /home/yuka
+2025-06-25 13:56:37.707 [info] [Model][openRepository] Opened repository (real path): /home/yuka
+2025-06-25 13:56:37.731 [info] > git config --get commit.template [10ms]
+2025-06-25 13:56:37.732 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-25 13:56:37.735 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2025-06-25 13:56:37.735 [warning] [Git][getBranch] No such branch: master
+2025-06-25 13:56:37.751 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-06-25 13:56:38.242 [info] > git check-ignore -v -z --stdin [1ms]
+2025-06-25 13:56:39.054 [info] > git status -z -uall [1312ms] (cancelled)
+2025-06-25 13:56:39.054 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2025-06-25 13:56:39.054 [warning] [Git][getBranch] No such branch: master
+2025-06-25 13:56:39.055 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-06-25 13:56:39.056 [info] > git config --get commit.template [2ms]
+2025-06-25 13:56:39.063 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-25 13:56:39.071 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2025-06-25 13:56:39.071 [warning] [Git][getBranch] No such branch: master
+2025-06-25 13:56:39.972 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [887ms]
+2025-06-25 13:56:40.267 [info] > git status -z -uall [1189ms] (cancelled)
+2025-06-25 13:57:14.806 [info] > git check-ignore -v -z --stdin [3ms]

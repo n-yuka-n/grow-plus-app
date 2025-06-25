@@ -1,0 +1,32 @@
+[
+  {
+    "content": "基本的なStreamlitアプリの雛形を作成",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "チャット形式のデータ入力インターフェースを実装",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "データ記録機能を実装（睡眠・食事・運動）",
+    "status": "pending",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "週次集計・振り返りレポート機能を実装",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "次週のアドバイス自動生成機能を実装",
+    "status": "pending",
+    "priority": "medium",
+    "id": "5"
+  }
+]

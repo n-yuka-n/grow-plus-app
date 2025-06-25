@@ -1,0 +1,356 @@
+[
+  {
+    "debug": "Calling MCP tool: closeAllDiffTabs",
+    "timestamp": "2025-06-25T02:31:46.282Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"CLOSED_0_DIFF_TABS\"}]}",
+    "timestamp": "2025-06-25T02:31:46.300Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:31:55.736Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:31:55.742Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: openDiff",
+    "timestamp": "2025-06-25T02:32:25.982Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: close_tab",
+    "timestamp": "2025-06-25T02:33:30.092Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:33:30.102Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[\\n  {\\n    \\\"uri\\\": \\\"file:///home/yuka/strong_woman_project.py\\\",\\n    \\\"diagnostics\\\": []\\n  }\\n]\"}]}",
+    "timestamp": "2025-06-25T02:33:30.112Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"TAB_CLOSED\"}]}",
+    "timestamp": "2025-06-25T02:33:30.138Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:33:30.175Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:33:30.179Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"DIFF_REJECTED\"},{\"type\":\"text\",\"text\":\"✻ [Claude Code] strong_woman_project.py (ae28b0) ⧉\"}]}",
+    "timestamp": "2025-06-25T02:33:30.207Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: close_tab",
+    "timestamp": "2025-06-25T02:33:30.208Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"TAB_CLOSED\"}]}",
+    "timestamp": "2025-06-25T02:33:30.209Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: openDiff",
+    "timestamp": "2025-06-25T02:33:33.433Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: close_tab",
+    "timestamp": "2025-06-25T02:34:00.276Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:34:00.286Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[\\n  {\\n    \\\"uri\\\": \\\"file:///home/yuka/requirements.txt\\\",\\n    \\\"diagnostics\\\": []\\n  }\\n]\"}]}",
+    "timestamp": "2025-06-25T02:34:00.292Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:34:00.312Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:34:00.314Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"TAB_CLOSED\"}]}",
+    "timestamp": "2025-06-25T02:34:00.347Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"DIFF_REJECTED\"},{\"type\":\"text\",\"text\":\"✻ [Claude Code] requirements.txt (fc437a) ⧉\"}]}",
+    "timestamp": "2025-06-25T02:34:00.396Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: close_tab",
+    "timestamp": "2025-06-25T02:34:00.396Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"TAB_CLOSED\"}]}",
+    "timestamp": "2025-06-25T02:34:00.398Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:34:06.482Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:34:06.488Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:37:41.039Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:37:41.048Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: closeAllDiffTabs",
+    "timestamp": "2025-06-25T02:37:41.057Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"CLOSED_0_DIFF_TABS\"}]}",
+    "timestamp": "2025-06-25T02:37:41.076Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:37:50.387Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:37:50.390Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:38:01.423Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:38:01.427Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:38:04.812Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:38:04.814Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:38:57.359Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:38:57.363Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:39:49.788Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:39:49.790Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:40:25.478Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:40:25.480Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:41:31.907Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:41:31.915Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: closeAllDiffTabs",
+    "timestamp": "2025-06-25T02:41:31.925Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"CLOSED_0_DIFF_TABS\"}]}",
+    "timestamp": "2025-06-25T02:41:31.940Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:41:44.117Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:41:44.119Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:45:38.568Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:45:38.579Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:50:00.520Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:50:00.529Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: closeAllDiffTabs",
+    "timestamp": "2025-06-25T02:50:00.539Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"CLOSED_0_DIFF_TABS\"}]}",
+    "timestamp": "2025-06-25T02:50:00.555Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:50:17.828Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:50:17.830Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Calling MCP tool: getDiagnostics",
+    "timestamp": "2025-06-25T02:52:35.122Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "debug": "Tool call succeeded: {\"content\":[{\"type\":\"text\",\"text\":\"[]\"}]}",
+    "timestamp": "2025-06-25T02:52:35.125Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  },
+  {
+    "error": "transport closed",
+    "timestamp": "2025-06-25T03:12:21.036Z",
+    "sessionId": "2856a6e5-87a8-487b-8ce6-08af96895822",
+    "cwd": "/home/yuka"
+  }
+]

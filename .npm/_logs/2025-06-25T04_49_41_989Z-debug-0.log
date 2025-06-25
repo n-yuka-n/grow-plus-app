@@ -1,0 +1,20 @@
+0 verbose cli /home/yuka/.nvm/versions/node/v22.16.0/bin/node /home/yuka/.nvm/versions/node/v22.16.0/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.16.0
+3 silly config load:file:/home/yuka/.nvm/versions/node/v22.16.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/mnt/c/claude-test/.npmrc
+5 silly config load:file:/home/yuka/.npmrc
+6 silly config load:file:/home/yuka/.nvm/versions/node/v22.16.0/etc/npmrc
+7 verbose title npm view @anthropic-ai/claude-code@latest version
+8 verbose argv "view" "@anthropic-ai/claude-code@latest" "version"
+9 verbose logfile logs-max:10 dir:/home/yuka/.npm/_logs/2025-06-25T04_49_41_989Z-
+10 verbose logfile /home/yuka/.npm/_logs/2025-06-25T04_49_41_989Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 http fetch GET 200 https://registry.npmjs.org/@anthropic-ai%2fclaude-code 191ms (cache revalidated)
+14 verbose cwd /mnt/c/claude-test
+15 verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+16 verbose node v22.16.0
+17 verbose npm  v10.9.2
+18 verbose exit 0
+19 info ok

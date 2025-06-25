@@ -1,0 +1,20 @@
+[
+  {
+    "content": "GROW+アプリをStreamlit CloudにデプロイするためのGitHubリポジトリ作成",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "requirements.txtを作成・更新して必要なライブラリを指定",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "GitHubにコードをプッシュしてStreamlit Cloudでデプロイ",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "3"
+  }
+]

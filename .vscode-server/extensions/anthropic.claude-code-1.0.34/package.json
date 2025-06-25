@@ -1,0 +1,160 @@
+{
+	"name": "claude-code",
+	"displayName": "Claude Code",
+	"description": "Claude Code for VS Code: Harness the power of Claude Code without leaving your IDE",
+	"version": "1.0.34",
+	"publisher": "Anthropic",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/anthropic-labs/vscode-mcp"
+	},
+	"engines": {
+		"node": ">=18.0.0",
+		"vscode": "^1.94.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"icon": "resources/claude-logo.png",
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "claude-code.runClaude",
+				"title": "Run Claude Code",
+				"enablement": "claude-code.hasClaudeInPath",
+				"icon": {
+					"light": "resources/claude-logo.svg",
+					"dark": "resources/claude-logo.svg"
+				}
+			},
+			{
+				"command": "claude-code.runClaude.keyboard",
+				"title": "Run Claude Code",
+				"enablement": "claude-code.hasClaudeInPath"
+			},
+			{
+				"command": "claude-code.runQuickFix",
+				"title": "Fix with Claude Code",
+				"enablement": "claude-code.hasClaudeInPath"
+			},
+			{
+				"command": "claude-code.acceptProposedDiff",
+				"title": "Claude Code: Accept Proposed Changes",
+				"enablement": "claude-code.viewingProposedDiff",
+				"icon": "$(check)"
+			},
+			{
+				"command": "claude-code.rejectProposedDiff",
+				"title": "Claude Code: Reject Proposed Changes",
+				"enablement": "claude-code.viewingProposedDiff",
+				"icon": "$(discard)"
+			},
+			{
+				"command": "claude-code.insertAtMentioned",
+				"title": "Claude Code: Insert At-Mentioned"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "claude-code.runClaude.keyboard",
+				"key": "cmd+escape",
+				"mac": "cmd+escape",
+				"win": "ctrl+escape",
+				"linux": "ctrl+escape",
+				"when": "claude-code.hasClaudeInPath"
+			},
+			{
+				"command": "claude-code.insertAtMentioned",
+				"key": "cmd+alt+K",
+				"mac": "cmd+alt+K",
+				"win": "ctrl+alt+K",
+				"linux": "ctrl+alt+K",
+				"when": "editorTextFocus"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "claude-code.runQuickFix",
+					"when": "editorTextFocus && claude-code.hasClaudeInPath",
+					"group": "2_claude@1"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "claude-code.acceptProposedDiff",
+					"when": "claude-code.viewingProposedDiff",
+					"group": "navigation"
+				},
+				{
+					"command": "claude-code.rejectProposedDiff",
+					"when": "claude-code.viewingProposedDiff",
+					"group": "navigation"
+				},
+				{
+					"command": "claude-code.runClaude",
+					"when": "claude-code.hasClaudeInPath",
+					"group": "navigation"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "claude-code.runClaude",
+					"when": "false"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run build",
+		"compile": "npm run typecheck && npm run lint && node esbuild.js",
+		"watch:esbuild": "node esbuild.js --watch",
+		"watch:tsc": "tsc --watch --project tsconfig.json",
+		"build": "npm run typecheck && npm run lint && node esbuild.js --production",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "npm run compile-tests && npm run compile && npm run lint",
+		"typecheck": "tsc",
+		"lint": "eslint src --fix",
+		"test": "vscode-test",
+		"package": "vsce package --no-git-tag-version --no-update-package-json --no-dependencies --skip-license -o dist/claude-code.vsix $(node -e \"console.log(require('../../package.json').version)\")",
+		"build-marketplace": "mkdir -p dist/extension && cp -r resources dist/extension/ && cp dist/extension.js dist/extension/ && cp package.extension.json dist/extension/package.json && cp README.md dist/extension/",
+		"package-marketplace": "npm run build-marketplace && cd dist/extension && vsce package --no-git-tag-version --allow-missing-repository --no-update-package-json --no-dependencies --skip-license -o ../claude-code-new.vsix $(node -e \"console.log(require('../../../../package.json').version)\")",
+		"publish-marketplace": "npm run package-marketplace && vsce publish --packagePath dist/claude-code-new.vsix"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.11.0",
+		"@vscode/jupyter-extension": "^1.1.1",
+		"lodash-es": "^4.17.21",
+		"shell-quote": "^1.8.1",
+		"ws": "^8.18.0",
+		"zod": "^3.24.1"
+	},
+	"devDependencies": {
+		"@types/lodash-es": "^4.17.12",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^18",
+		"@types/shell-quote": "^1.7.5",
+		"@types/vscode": "^1.94.0",
+		"@vscode/test-cli": "^0.0.10",
+		"@vscode/test-electron": "^2.4.1",
+		"@vscode/vsce": "^2.32.0",
+		"esbuild": "0.23.1",
+		"typescript": "^5.7.3"
+	},
+	"overrides": {
+		"@vscode/vsce": {
+			"@azure/identity": "~4.2.1"
+		}
+	},
+	"__metadata": {
+		"installedTimestamp": 1750821405069,
+		"targetPlatform": "undefined",
+		"size": 220323
+	}
+}
