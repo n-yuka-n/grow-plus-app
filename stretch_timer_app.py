@@ -120,46 +120,115 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# 音響機能のJavaScript
+# 音響機能のJavaScript（HTMLAudioElement使用）
 audio_js = """
 <script>
 class AudioManager {
     constructor() {
-        this.audioContext = null;
         this.enabled = true;
+        this.audioContext = null;
+        this.sounds = {};
         this.init();
     }
     
     async init() {
+        // Web Audio API とHTMLAudioElementの両方を試す
         try {
             this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
         } catch (e) {
-            console.warn('Web Audio API not supported');
+            console.warn('Web Audio API not supported, using HTMLAudioElement');
+        }
+        
+        // プリセット音を準備
+        this.createSounds();
+    }
+    
+    createSounds() {
+        // 各音をBase64エンコードされたWAVファイルとして作成
+        const createTone = (frequency, duration) => {
+            const sampleRate = 8000;
+            const numSamples = sampleRate * (duration / 1000);
+            const buffer = new ArrayBuffer(44 + numSamples * 2);
+            const view = new DataView(buffer);
+            
+            // WAVヘッダー
+            const writeString = (offset, string) => {
+                for (let i = 0; i < string.length; i++) {
+                    view.setUint8(offset + i, string.charCodeAt(i));
+                }
+            };
+            
+            writeString(0, 'RIFF');
+            view.setUint32(4, 36 + numSamples * 2, true);
+            writeString(8, 'WAVE');
+            writeString(12, 'fmt ');
+            view.setUint32(16, 16, true);
+            view.setUint16(20, 1, true);
+            view.setUint16(22, 1, true);
+            view.setUint32(24, sampleRate, true);
+            view.setUint32(28, sampleRate * 2, true);
+            view.setUint16(32, 2, true);
+            view.setUint16(34, 16, true);
+            writeString(36, 'data');
+            view.setUint32(40, numSamples * 2, true);
+            
+            // 音声データ
+            for (let i = 0; i < numSamples; i++) {
+                const sample = Math.sin(2 * Math.PI * frequency * i / sampleRate) * 0.3;
+                view.setInt16(44 + i * 2, sample * 32767, true);
+            }
+            
+            return 'data:audio/wav;base64,' + btoa(String.fromCharCode.apply(null, new Uint8Array(buffer)));
+        };
+        
+        // 各種音を作成
+        this.sounds = {
+            start: new Audio(createTone(800, 300)),
+            end: new Audio(createTone(400, 500)),
+            switch: new Audio(createTone(600, 500)),
+            countdown: new Audio(createTone(1000, 100))
+        };
+        
+        // 音量を設定
+        Object.values(this.sounds).forEach(audio => {
+            audio.volume = 0.3;
+        });
+    }
+    
+    async playSound(type) {
+        if (!this.enabled) return;
+        
+        try {
+            // ブラウザのオーディオコンテキストを開始
+            if (this.audioContext && this.audioContext.state === 'suspended') {
+                await this.audioContext.resume();
+            }
+            
+            // HTMLAudioElementで再生
+            if (this.sounds[type]) {
+                this.sounds[type].currentTime = 0;
+                const playPromise = this.sounds[type].play();
+                if (playPromise !== undefined) {
+                    await playPromise;
+                }
+            }
+        } catch (error) {
+            console.warn('音声再生エラー:', error);
+            // フォールバック: ビープ音
+            this.playBeep();
         }
     }
     
-    playSound(frequency, duration = 200, type = 'start') {
-        if (!this.enabled || !this.audioContext) return;
-        
-        if (this.audioContext.state === 'suspended') {
-            this.audioContext.resume();
+    playBeep() {
+        // 最後の手段: システムビープ
+        try {
+            const utterance = new SpeechSynthesisUtterance('');
+            utterance.volume = 0.1;
+            utterance.rate = 10;
+            speechSynthesis.speak(utterance);
+        } catch (e) {
+            console.warn('ビープ音も再生できません');
         }
-        
-        const oscillator = this.audioContext.createOscillator();
-        const gainNode = this.audioContext.createGain();
-        
-        oscillator.connect(gainNode);
-        gainNode.connect(this.audioContext.destination);
-        
-        oscillator.frequency.setValueAtTime(frequency, this.audioContext.currentTime);
-        oscillator.type = 'sine';
-        
-        gainNode.gain.setValueAtTime(0, this.audioContext.currentTime);
-        gainNode.gain.linearRampToValueAtTime(0.3, this.audioContext.currentTime + 0.01);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, this.audioContext.currentTime + duration / 1000);
-        
-        oscillator.start(this.audioContext.currentTime);
-        oscillator.stop(this.audioContext.currentTime + duration / 1000);
     }
     
     setEnabled(enabled) {
@@ -167,19 +236,12 @@ class AudioManager {
     }
 }
 
+// グローバルに公開
 window.audioManager = new AudioManager();
 
-// Streamlitからの音響制御
-window.playTimerSound = function(type) {
-    const sounds = {
-        'start': [800, 300],
-        'end': [400, 500],
-        'switch': [600, 500],
-        'countdown': [1000, 100]
-    };
-    
-    if (sounds[type] && window.audioManager) {
-        window.audioManager.playSound(sounds[type][0], sounds[type][1], type);
+window.playTimerSound = async function(type) {
+    if (window.audioManager) {
+        await window.audioManager.playSound(type);
     }
 };
 
@@ -188,6 +250,14 @@ window.setSoundEnabled = function(enabled) {
         window.audioManager.setEnabled(enabled);
     }
 };
+
+// ユーザーの最初のクリックで音声を有効化
+document.addEventListener('click', function enableAudio() {
+    if (window.audioManager && window.audioManager.audioContext) {
+        window.audioManager.audioContext.resume();
+    }
+    document.removeEventListener('click', enableAudio);
+}, { once: true });
 </script>
 """
 
@@ -397,14 +467,21 @@ def main():
             if st.button("🔊 音声テスト", help="効果音が正常に動作するかテストします"):
                 st.components.v1.html("""
                 <script>
-                if (window.playTimerSound) {
-                    window.playTimerSound('start');
-                } else {
-                    console.log('音響機能が初期化されていません');
-                }
+                (async function() {
+                    try {
+                        if (window.playTimerSound) {
+                            await window.playTimerSound('start');
+                            console.log('テスト音を再生しました');
+                        } else {
+                            console.log('音響機能が初期化されていません');
+                        }
+                    } catch (error) {
+                        console.error('音声テストエラー:', error);
+                    }
+                })();
                 </script>
                 """, height=0)
-                st.success("テスト音を再生しました（音が聞こえない場合は音量設定を確認してください）")
+                st.success("🔊 テスト音を再生しました！音が聞こえない場合は：\n- ブラウザ・端末の音量を確認\n- ミュートモードを解除\n- ヘッドフォン接続を確認")
             
             if new_sound_enabled != st.session_state.sound_enabled:
                 st.session_state.sound_enabled = new_sound_enabled
